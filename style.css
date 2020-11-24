@@ -1,0 +1,60 @@
+.main-nav a:hover {
+color: #2196F3;
+}
+.main-nav h2 {
+    color: #000000;
+}
+.main-nav span {
+    color: #2196F3;
+}
+.footer-title span {
+    color: #2196F3;
+}
+.head {
+    background: #2F303A;
+}
+.head h2 {
+    color: #ffffff;
+}
+.head button {
+    color: #FFFFFF;
+    background: #2196F3;
+    border: 0;
+}
+ul {
+    list-style: none
+}
+a {
+    text-decoration: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.domestic-nav a{
+    color: #212121;
+}
+.contact-nav a{
+    color: #757575;
+}
+.advantages p{
+    color: #757575;
+}
+.advantages h4{
+    color: #212121;
+}
+h3 {
+    color: #212121;   
+}
+.name {
+    color: #212121;
+}
+.duty {
+    color: #757575;
+}
+.fotter-contacts {
+    color: #757575;
+}
+.footer-address {
+    color: #ffffff;
+}
