@@ -6,6 +6,44 @@
 body {
     width: 1600px;
 }
+h1 {
+    color: #ffffff;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+}
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;   
+
+}
+.logo-in-head {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.logo-in-head span {
+    color: #2196F3;
+}
 .main-nav {
     height: 80px;
     display: flex;
@@ -14,14 +52,8 @@ body {
     justify-content: space-between;
 
 }
-.main-nav a:hover {
+nav a:hover {
 color: #2196F3;
-}
-.main-nav h2 {
-    color: #000000;
-}
-.main-nav span {
-    color: #2196F3;
 }
 .footer-title span {
     color: #2196F3;
@@ -33,11 +65,8 @@ color: #2196F3;
     align-items: center;
     justify-content: center;
     width: 1600px;
-    height: 600px;
-    
-    
+    height: 600px;   
 }
-
 .head button {
     color: #FFFFFF;
     background: #2196F3;
@@ -67,8 +96,6 @@ a {
 
 .domestic-nav {
     display: flex;
-    /* margin-right: 331px; */
-    /* margin-left: 93px; */
 }
 .domestic-nav a{
     color: #212121;
@@ -107,7 +134,7 @@ a {
 .advantages p{
     color: #757575;
 }
-.advantages h4{
+.advantages h3{
     color: #212121;
 }
 .example {
@@ -133,7 +160,7 @@ a {
     justify-content: center;
     background-color: #F5F4FA;
 }
-.team h3 {
+.team h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,42 +180,6 @@ a {
     background-color: white;
     box-shadow: 1px 1px 2px #e0dfdf;
     border-radius: 4px;
-}
-
-
-h1 {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-}
-h2 {
-    color: #ffffff;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    
-}
-h3 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #212121;   
-
 }
 .name {
     padding: 30px 0 10px 0;
@@ -211,7 +202,8 @@ h3 {
     text-align: center;
     letter-spacing: 0.03em;
 }
-footer {
+.footer {
+    background-color: #2F303A;
     padding: 60px 215px;
     background-color: #2F303A;
     display: flex;
@@ -219,24 +211,41 @@ footer {
     align-items: left;
     justify-content: center;
 }
-.footer p{
-    color: #FFFFFF;
-    padding-bottom: 20px;
+.logo-in-footer {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    color: #ffffff;
+}
+.logo-in-footer span {
+    color: #2196F3;
+} 
+.address {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #ffffff
+}
+.address a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer ul {
+    padding-top: 20px;
 }
 .footer li{
     padding-bottom: 9px;
-}
-.footer-contacts {
-    color: #9b9b9b;
-}
-.footer-address {
-    color: #ffffff;
 }
 
 
