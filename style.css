@@ -52,9 +52,12 @@ h2 {
     justify-content: space-between;
 
 }
-nav a:hover {
+.domestic-nav a:hover {
 color: #2196F3;
 }
+.contact-nav a:hover {
+    color: #2196F3;
+    }
 .footer-title span {
     color: #2196F3;
 }
@@ -173,7 +176,7 @@ a {
     justify-content: space-between;
 }
 .team li {
-    width: 260px;
+    width: 270px;
     height: 368px;
     display: flex;
     flex-direction: column;
