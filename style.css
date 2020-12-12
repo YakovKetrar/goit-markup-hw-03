@@ -1,65 +1,66 @@
 
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none
+}
 * {
     padding: 0;
     margin: 0;
 }
-body {
-    width: 1600px;
+:root {
+    --blue: #2196F3;
+    --grey: #757575;
+    --black: #212121;
+    --white: #FFFFFF;
 }
+body {
+    font-family: Roboto, Arial;   
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
+  }
 h1 {
-    color: #ffffff;
-    
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
+    color: var(--white);
 }
 h2 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700px;
     font-size: 36px;
     line-height: 42px;
-    text-align: center;
     letter-spacing: 0.03em;
-
-    color: #212121;   
-
+    color: var(--black);
 }
 .logo-in-head {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
+    font-family: Raleway, Arial;   
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
     color: #000000;
+    padding-right: 93px;
 }
-.logo-in-head span {
-    color: #2196F3;
+nav span {
+    color: var(--blue);
 }
 .main-nav {
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 0 215px;
     justify-content: space-between;
 
 }
 .domestic-nav a:hover {
-color: #2196F3;
+    color: var(--blue);
 }
 .contact-nav a:hover {
-    color: #2196F3;
-    }
-.footer-title span {
-    color: #2196F3;
+    color: var(--blue);
 }
 .head {
     background: #2F303A;
@@ -71,37 +72,38 @@ color: #2196F3;
     height: 600px;   
 }
 .head button {
-    color: #FFFFFF;
-    background: #2196F3;
+    font-family: inherit;
+    color: var(--white);
+    background: var(--blue);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
     border: 0;
     width: 200px;
     height: 50px;
     border-radius: 4px;
+    letter-spacing: 0.06em;
 }
-.nav {
-    justify-content: space-between;
+.nav-all {
     display: flex;
-    width: 903px;
-
-    font-family: Roboto;
-    font-style: normal;
+    justify-content: space-between;
+    width: 100%;
+}
+nav {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0 215px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 }
-ul {
-    list-style: none
-}
-a {
-    text-decoration: none;
-}
-
 .domestic-nav {
     display: flex;
 }
 .domestic-nav a{
-    color: #212121;
+    color:  var(--black);
     padding-right: 50px;
 }
 .contact-nav {
@@ -109,55 +111,55 @@ a {
 }
 .contact-nav a{
     color: #b1b1b1;
-    padding-right: 30px;
+    padding-left: 30px;
 }
 .advantages ul{
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    height: 251px;
-    padding: 94px 215px;
+    padding: 94px 215px 0 215px;
 }
 .advantages li {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 270px;
-    height: 251px;
 }
 
 .advantages div {
     width: 270px;
-    height: 120px;
     background-color: #F5F4FA ;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .advantages p{
-    color: #757575;
+    color: var(--grey);
 }
 .advantages h3{
-    color: #212121;
+    color: var(--black);
 }
 .example {
-    padding: 94px 215px;
-    width: 1170px;
+    padding: 94px 0;
     height: 386px; 
     display: flex;
     flex-direction: column;
-    
-    justify-content: space-between;
+    justify-content: center;
 }
 .example ul{
+    padding: 0 215px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.example h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
 .team{
     display: flex;
     flex-direction: column;
-    width: 1600px;
     height: 648px;
     align-items: center;
     justify-content: center;
@@ -180,15 +182,13 @@ a {
     height: 368px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 1px 1px 2px #e0dfdf;
     border-radius: 4px;
 }
 .name {
     padding: 30px 0 10px 0;
-    color: #212121;
-    font-family: Roboto;
-    font-style: normal;
+    color: var(--black);
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -196,18 +196,17 @@ a {
     letter-spacing: 0.03em;
 }
 .duty {
-    color: #757575;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    color: var(--gray);
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
 }
+.footer div {
+    padding: 60px 215px;
+}
 .footer {
     background-color: #2F303A;
-    padding: 60px 215px;
     background-color: #2F303A;
     display: flex;
     flex-direction: column;
@@ -216,29 +215,24 @@ a {
 }
 .logo-in-footer {
     font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color:  var(--white);
+    
 }
 .logo-in-footer span {
-    color: #2196F3;
+    color:  var(--blue);
 } 
 .address {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #ffffff
+    padding-top: 20px;
+    color:  var(--white);
 }
 .address a {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -254,55 +248,48 @@ a {
 
 
 /* Портфолио */
-
-.main-portfolio {
-    padding: 95px 215px;
+.div-portfolio {
+    padding: 94px 215px;
     border-top: 1px solid #ECECEC;
 }
-
-.main-filter ul{
+.filters {
+ 
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-.main-filter li {
+.filters li {
     padding-right: 8px;
 }
-.main-filter button {
+.filters button {
     padding: 6px 22px;
     border: 0;
     border-radius: 4px;
-    color: #212121;
+    color: var(--black);
     background-color: #F5F4FA;
-
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.main-filter button:hover {
-    color: #FFFFFF;
-    background-color: #2196F3;
-    font-family: Roboto;
-    font-style: normal;
+.filters button:hover {
+    color:  var(--white);
+    background-color: var(--blue);
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.portfolio ul {
-
+.list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-.portfolio li {
+.list li {
     width: 370px;
     height: 404px;
     display: flex;
@@ -312,31 +299,26 @@ a {
 
 }
 
-.portfolio img {
+.list img {
     padding-bottom: 20px;
 }
-.portfolio p {
+.list p {
     display: flex;
     flex-direction: column;
     padding: 0 24px 0 24px ;
 }
 .portfolio-type {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--gray);
     
 }
 .portfolio-name {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color:  var(--black);
     
 }
