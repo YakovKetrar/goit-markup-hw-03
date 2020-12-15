@@ -14,9 +14,10 @@ ul {
     --grey: #757575;
     --black: #212121;
     --white: #FFFFFF;
+    --backgrd:#2F303A;
 }
 body {
-    font-family: Roboto, Arial;   
+    font-family: Roboto, sans-serif;   
 }
 .container {
     width: 1600px;
@@ -39,7 +40,7 @@ h2 {
     color: var(--black);
 }
 .logo-in-head {
-    font-family: Raleway, Arial;   
+    font-family: Raleway,  sans-serif;   
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
@@ -63,7 +64,7 @@ nav span {
     color: var(--blue);
 }
 .head {
-    background: #2F303A;
+    background: var(--backgrd);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,8 +207,7 @@ nav {
     padding: 60px 215px;
 }
 .footer {
-    background-color: #2F303A;
-    background-color: #2F303A;
+    background-color: var(--backgrd);
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -244,6 +244,9 @@ nav {
 .footer li{
     padding-bottom: 9px;
 }
+
+
+
 
 
 
