@@ -254,6 +254,7 @@ nav {
 
 .portfolio {
     margin: 94px auto;
+    height: 1360px;
 }
 .filters {
     display: flex;
