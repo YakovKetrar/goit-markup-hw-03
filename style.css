@@ -211,7 +211,7 @@ nav {
     border-radius: 4px;
 }
 .team-list div{
-    padding: 30px 0;
+    padding: 30px 10px;
     text-align: center;
 }
 .name {
@@ -219,7 +219,6 @@ nav {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-
     letter-spacing: 0.03em;
 }
 .duty {
@@ -279,6 +278,12 @@ nav {
 
 .portfolio {
     margin: 94px auto;
+}
+.portfolio h2 {
+    margin: 0;
+    text-align: left;
+}
+.portfolio div:first-child {
     height: 1360px;
 }
 .filters {
@@ -286,8 +291,8 @@ nav {
     justify-content: center;
     align-items: center;  
 }
-.filters li {
-    padding-right: 8px;
+.filters li:not(:last-child) {
+    margin-right: 8px;
 }
 .filters button {
     padding: 6px 22px;
@@ -313,19 +318,18 @@ nav {
 .list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    text-align: left;
 }
 .list li {
     width: 370px;
-    height: 404px;
-    display: flex;
-    flex-direction: column;
     border: 1px solid #EEEEEE;
     margin-top: 30px;
 }
+.list li:not(:nth-child(3n)) {
+    margin-right: 30px;  
+}
 .description {
-    margin: 20px 24px;
+    padding: 20px 24px 20px 24px;
 }
 .portfolio-name {
     font-weight: 700;
