@@ -12,9 +12,12 @@ ul {
   padding: 0;
   margin: 0;
 }
+img {
+    display: block
+}
 :root {
     --blue: #2196F3;
-    --grey: #757575;
+    --gray: #757575;
     --black: #212121;
     --white: #FFFFFF;
     --backgrd:#2F303A;
@@ -37,13 +40,29 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
+    margin-top: 0;
 }
 h2 {
-    font-weight: 700px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--black);
+}
+h3 {
+    margin: 0;
+}
+
+
+/*----------------Header------------------*/
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
 }
 .logo-in-head {
     font-family: Raleway,  sans-serif;   
@@ -57,25 +76,56 @@ nav span {
     color: var(--blue);
 }
 .main-nav {
-    height: 80px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ECECEC;
+    align-items: center
 }
-.domestic-nav a:hover {
-    color: var(--blue);
-}
+.domestic-nav a:hover,
 .contact-nav a:hover {
     color: var(--blue);
 }
+.nav-all {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.domestic-nav {
+    display: flex;
+}
+.domestic-nav li:not(:last-child) {
+    margin-right: 50px;
+}
+.domestic-nav a{
+    padding: 30px 0;
+    color:  var(--black);
+}
+.contact-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-nav li:not(:last-child) {
+    margin-right:  30px;
+}
+.contact-nav a{
+    padding: 30px 0;
+    color: #b1b1b1;
+}
+
+
+/*----------------head------------------*/
 .head {
     background: var(--backgrd);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    height: 600px;   
+    padding: 200px 0; 
+}
+.head div {
+    height: 200px;
 }
 .head button {
     font-family: inherit;
@@ -91,34 +141,9 @@ nav span {
     letter-spacing: 0.06em;
 
 }
-.nav-all {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-nav {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-.domestic-nav {
-    display: flex;
-}
-.domestic-nav a{
-    color:  var(--black);
-    margin-right: 50px;
-}
-.contact-nav {
-    display: flex;
-}
-.contact-nav a{
-    color: #b1b1b1;
-    margin-left: 30px;
-}
+
+
+/*----------------dvantages------------------*/
 .advantages {
     padding-top: 94px;
 }
@@ -127,15 +152,12 @@ nav {
 }
 .advantages ul{
     display: flex;
-    justify-content: space-between;
 }
-.advantages li {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
+.advantages li:not(:last-child){
+    margin-right: 30px;
 }
 .advantages p{
-    color: var(--grey);
+    color: var(--gray);
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -149,74 +171,66 @@ nav {
     color: var(--black);
     margin-bottom: 10px;
 }
+
+
+/*----------------example------------------*/
 .example {
     padding: 94px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .example div {
     height: 386px; 
 }
 .example ul{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-.example h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+.example li:not(:last-child){
+    margin-right: 30px;
 }
+
+/*----------------team------------------*/
 .team{
     padding: 94px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #F5F4FA;
 }
-.team div {
+.team div:first-child {
     height: 460px;
 }
-.team h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
 .team ul {
-    width: 1170px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
+.team li:not(:last-child){
+    margin-right: 30px;
 }
 .team li {
     width: 270px;
-    height: 368px;
     display: flex;
     flex-direction: column;
     background-color: var(--white);
     box-shadow: 1px 1px 2px #e0dfdf;
     border-radius: 4px;
 }
+.team-list div{
+    padding: 30px 0;
+    text-align: center;
+}
 .name {
-    margin: 30px 0 10px 0;
     color: var(--black);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
+
     letter-spacing: 0.03em;
 }
 .duty {
     color: var(--gray);
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.03em;
 }
+
+
+/*----------------footer------------------*/
 .footer {
     padding: 60px 0;
     background-color: var(--backgrd);
