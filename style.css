@@ -124,9 +124,6 @@ nav {
     text-align: center;
     padding: 200px 0; 
 }
-.head div {
-    height: 200px;
-}
 .head button {
     font-family: inherit;
     color: var(--white);
@@ -146,9 +143,6 @@ nav {
 /*----------------dvantages------------------*/
 .advantages {
     padding-top: 94px;
-}
-.advantages div  {
-    height: 101px;
 }
 .advantages ul{
     display: flex;
@@ -177,9 +171,6 @@ nav {
 .example {
     padding: 94px 0;
 }
-.example div {
-    height: 386px; 
-}
 .example ul{
     display: flex;
 }
@@ -192,9 +183,6 @@ nav {
     padding: 94px 0;
     display: flex;
     background-color: #F5F4FA;
-}
-.team div:first-child {
-    height: 460px;
 }
 .team ul {
     display: flex;
@@ -215,6 +203,8 @@ nav {
     text-align: center;
 }
 .name {
+    margin-bottom: 10px;
+
     color: var(--black);
     font-weight: 500;
     font-size: 16px;
@@ -240,9 +230,6 @@ nav {
     height: 252px;
     margin-right: auto;
 }
-.footer div {
-    height: 132px;
-}
 .logo-in-footer {
     font-family: Raleway;
     font-weight: 700;
@@ -255,19 +242,24 @@ nav {
 .logo-in-footer span {
     color:  var(--blue);
 } 
-.address {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    margin-top: 20px;
-    color:  var(--white);
-}
 .address a {
+    display: block;
+
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+.address a:first-child {
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color:  var(--white);
+}
+.address a:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 
@@ -277,14 +269,11 @@ nav {
 /* Портфолио */
 
 .portfolio {
-    margin: 94px auto;
+    padding: 94px 15px;
 }
 .portfolio h2 {
     margin: 0;
     text-align: left;
-}
-.portfolio div:first-child {
-    height: 1360px;
 }
 .filters {
     display: flex;
@@ -332,6 +321,8 @@ nav {
     padding: 20px 24px 20px 24px;
 }
 .portfolio-name {
+    margin-bottom: 4px;
+    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
